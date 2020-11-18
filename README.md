@@ -1,0 +1,2 @@
+# tampermonkey_update
+IDaaSの設定で必要となるUserScript
