@@ -20,7 +20,8 @@
     }
 
     if (path == "/sign_in/new") {
-        const loginByEmail = Array.from(document.getElementsByClassName("_2YH0UDm8 ssoLink"))[0];
+        if (typeof(document.getElementsByClassName("_2YH0UDm8 ssoLink")[0]) === "undefined") {location.reload();}
+        const loginByEmail = document.getElementsByClassName("_2YH0UDm8 ssoLink").item(0);
         console.log(loginByEmail);
         loginByEmail.click();
     }
