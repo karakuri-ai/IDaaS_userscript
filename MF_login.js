@@ -6,8 +6,8 @@
 // @author       You
 // @match        https://id.moneyforward.com/*
 // @grant        none
-// @updateURL    https://github.com/karakuri-ai/IDaaS_userscript/MF_login.js
-// @downloadURL  https://github.com/karakuri-ai/IDaaS_userscript/MF_login.js
+// @updateURL    https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/MF_login.js
+// @downloadURL  https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/MF_login.js
 // ==/UserScript==
 
 (function() {
@@ -20,8 +20,7 @@
     }
 
     if (path == "/sign_in/new") {
-        if (document.getElementsByClassName("_3VvQobr4 title")[0] == undefined) {location.reload();}
-        const loginByEmail = document.getElementsByClassName("_1Uh6Qww4 wrapper _1QjLjYWx blockContent")[0].firstElementChild;
+        const loginByEmail = Array.from(document.getElementsByClassName("_2YH0UDm8 ssoLink"))[0];
         console.log(loginByEmail);
         loginByEmail.click();
     }
