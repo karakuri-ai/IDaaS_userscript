@@ -9,8 +9,8 @@
 // @match        https://app.asana.com/*
 // @match        https://esa.io/
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/MF_login.js
-// @downloadURL  https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/MF_login.js
+// @updateURL    https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/userscript.js
+// @downloadURL  https://raw.githubusercontent.com/karakuri-ai/IDaaS_userscript/main/userscript.js
 // ==/UserScript==
 
 (function() {
